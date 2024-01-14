@@ -1,5 +1,3 @@
-package com.nkb.calci;
-
 public class DivException extends Exception {
 	private String detail;
 	DivException(String a) {

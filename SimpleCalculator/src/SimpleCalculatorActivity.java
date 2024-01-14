@@ -1,5 +1,3 @@
-package com.nkb.calci;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -7,7 +5,6 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class SimpleCalculatorActivity extends Activity {
-    /** Called when the activity is first created. */
 	EditText disp;
 	Button b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,bplus,bminus,binto,bby,bdot,bclear,bequals;
 	float op1,op2;
@@ -237,7 +234,7 @@ public class SimpleCalculatorActivity extends Activity {
     		}
     	}
     };
-    String perform(char op,float op1,float op2) throws DivException{
+    String perform(char op,float op1,float op2) throws DivException {
     	switch(op) {
     		case '+' : return Float.toString(op1+op2);
     		case '-' : return Float.toString(op1-op2);
